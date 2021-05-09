@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background: #1e272e;
+    height: 25px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.fxn {
+    padding-left: 20px;
+    color: white;
+    border: -2.9px solid;
+    border: 0.1px solid #9980FA;
+    height: -3px;
+    padding-right: 20px;
+    margin-right: 34px;
+    margin-left: 34px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.menu-options {
+    height: 35px;
+    background: #a5b1c2;
+}
+.fontstyle{
+    
+}
+.bold{
+
+}
+.italic{
+
+}
+.underline{
+
+}
+
+.calculations {
+    height: 25px;
+    background: snow;
+    display: flex;
+    justify-content: left;
+    align-content: space-between;
+}
+
+.cell-content {
+    overflow: auto;
+    min-height: calc(100vh - 110px);
+    position: relative;
+    font-size: 0.8rem;
+}
+
+.cells {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    /* if you want ki a-z screen to fit into the screen => no need to set default width */
+    /* min-width: calc(100vw - 20px);  */
+    min-height: calc(100vh - 100px);
+}
+
+.row {
+    display: flex;
+    /* width: 100%; */
+}
+
+.cell {
+    border: solid 0.5px #dfe4ea;
+    min-height: 20px;
+    /* width: calc(calc(100vw - 40px) / 26); */
+    text-align: center;
+    outline: none;
+    min-width: 70px;
+    background-color: white;
+    word-break: break-all;
+}
+
+.click-border {
+    border: solid 0.5px #acadad;
+    background: #ebeef0;
+}
+
+.top-right-cell {
+    height: 20px;
+    width: 20px;
+    background: #4b4b4b;
+    z-index: 3;
+    position: absolute;
+}
+
+.top-row {
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    left: 20px;
+    background: #CAD3C8;
+    /* min-width: calc(100vw - 20px); */
+}
+
+.top-row-cell {
+    min-height: 20px;
+    border: 0.5px #57606f solid;
+    text-align: center;
+    /* min-width: calc(calc(100vw - 40px)/ 26); */
+    min-width: 70px;
+}
+
+.left-col {
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    z-index: 2;
+    background: lightgray;
+}
+
+.left-col-cell {
+    border: 0.5px solid #57606f;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+#address {
+    text-align: center;
+    width: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#formula {
+    padding-left: 10px;
+    outline: none;
+    margin-left: 3px;
+    width: 90%;
+    background: white;
+    border: 0.2px solid gray;
+    border-radius: 4px;
+}
+
+.sheets {
+    display: flex;
+    background:#1e272e;
+}
+
+.add-sheet {
+    width: 23px;
+    border-right: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: lightgray;
+    cursor: pointer;
+}
+
+
+.sheet-list {
+    display: flex;
+    height: 100%;
+    width: 76%;
+}
+
+.sheet {
+    width: 9%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: darkgrey;
+    border-right: 2px solid black;
+    cursor: pointer;
+}
+
+.active-class {
+    font-weight: bold;
+    background: white;
+}
